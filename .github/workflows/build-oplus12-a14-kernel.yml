@@ -28,7 +28,7 @@ jobs:
         git clone https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8650 kernel_workspace --depth=1
         cd $GITHUB_WORKSPACE/kernel_workspace
         cd kernel_platform
-        git clone https://github.com/OnePlusOSS/android_kernel_oneplus_sm8650/ -b oneplus --depth=1
+        git clone https://github.com/hanyu133341/android_kernel_oneplus_sm8650 --depth=1
     - name: Download Clang-aosp
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
