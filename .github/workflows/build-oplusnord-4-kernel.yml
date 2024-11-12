@@ -1,4 +1,4 @@
-name: Build OnePlus 12 A14 Kernel
+name: Build OnePlus nord 4 A14 Kernel
 on:
   workflow_dispatch:
 
@@ -25,10 +25,10 @@ jobs:
 
     - name: Download kernel source
       run: |
-        git clone https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8650 kernel_workspace --depth=1
+        git clone https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm7675.git -b oneplus/sm7675_u_14.1.0_oneplus_nord4 kernel_workspace --depth=1
         cd $GITHUB_WORKSPACE/kernel_workspace
         cd kernel_platform
-        git clone https://github.com/hanyu133341/android_kernel_oneplus_sm8650 --depth=1
+        git clone https://github.com/OnePlusOSS/android_kernel_oneplus_sm7675.git -b oneplus/sm7675_u_14.1.0_oneplus_nord4 --depth=1
     - name: Download Clang-aosp
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
