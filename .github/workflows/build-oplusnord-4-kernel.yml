@@ -39,7 +39,7 @@ jobs:
     - name: Build kernel
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        KERNEL_DIR=./kernel_platform/android_kernel_oneplus_sm8650
+        KERNEL_DIR=./kernel_platform/android_kernel_oneplus_sm7675
         OUT_DIR=../../out
         DEFCONFIG="gki_defconfig vendor/pineapple_GKI.config"
         LTO=thin
